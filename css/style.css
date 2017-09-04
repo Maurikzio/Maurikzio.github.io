@@ -54,7 +54,7 @@
 }
 /*------------------------SECTION HOME------------*/
 .home {
-  background: url(../images/headerbackground.png) center;
+  background: url('../images/headerbackground.png') center;
   background-repeat: no-repeat;
   font-family: 'Lato';
   -moz-transform: skew(0deg, -7deg) translateY(-120px);
