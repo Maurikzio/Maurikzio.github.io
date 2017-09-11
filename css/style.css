@@ -229,7 +229,7 @@
   transform: skew(0deg, 7deg);
 }
 .team .content-team .members .member {
-  border: .5px solid red;
+  
   text-align: center;
 }
 .team .content-team .members .member img {
@@ -251,7 +251,7 @@
   margin-top: 18px;
 }
 .team .content-team .members .member .image {
-  border: .5px solid yellow;
+
   height: 179px;
   margin: auto;
   position: relative;
