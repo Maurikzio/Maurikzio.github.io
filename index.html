@@ -6,11 +6,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>FE</title>
 
+	<!-- <script src="js/jquery-slim.min.js"></script> -->
+	<!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
+	
+	<script>
+
+	// window.onload = function(){
+	// 		if(window.jQuery){
+	// 			alert('jquery working');
+	// 		}else{
+	// 			alert('jquery doesnt work');
+	// 		}
+	// 	};
+
+	// $(document).ready(function(){
+	// 		$('#goUp').click(function(){
+	// 		 $('HTML, BODY').animate({ scrollTop: 0 }, 400);
+	// 		 return false;
+	// 		//alert("hola mundo");
+	// 	});
+	// });
+	</script>
+
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
 
 	<!-- mine CSS, for less -->
-	<!-- <script src="less.min.js"></script> -->
+	<script src="less.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- NO LESS -->
@@ -26,10 +49,13 @@
 
 	<!-- <script src="js/myJs.js"></script> -->
 
+	
 </head>
 
 <body>
-	<header class="home">
+	
+
+	<header class="home" id="yes">
 	<div class="container-fluid">
 		<div class="container cont">
 			<nav class="navbar navbar-expand-md navbar-inverse ">
@@ -63,11 +89,14 @@
 			</nav>
 			
 			<div class="row">
-				<div class=" col-12 content-home text-center">
+				<div class=" col-12 content-home">
 					<h1>Get ready</h1>
 					<img src="images/logoHome.png" alt="FE logo big" class="logo-home">
 					<p class=" px-0 col col-md-6">Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse, aliquam ipsum ante</p>
-					<img class="scroll" src="images/scroll.png" alt="">
+					<img class="scroll" id="scrollImg" src="images/scroll1.png" alt="" onclick="myScroll(1100)">
+					
+					<!-- <img src="images/scroll.png"  class="scroll" style="position:absolute; left:50%;" id="yesImg2"> -->
+					
 				</div>
 			</div>
 		</div>
@@ -77,6 +106,10 @@
 		</div>
 		
 	</header>
+	
+	<div id="spinnerOut">
+			<div id="spinnerIn"></div>
+	</div>
 
 	<section class="about">
 
@@ -134,7 +167,7 @@
 
 						<div class="item col-12 col-md-6">
 							<div class="row p-2 align-items-center">
-								<div class="first col col-md">
+								<div class="first col-3 col-md">
 									<div class="paralelogram mt-2">
 										<span class="fa fa-stumbleupon"></span>
 									</div>
@@ -148,7 +181,7 @@
 
 						<div class="item  col-12 col-md-6">
 							<div class="row p-2 align-items-center">
-								<div class="col col-md">
+								<div class="col-3 col-md">
 									<div class="paralelogram mt-2">
 										<span class="fa fa-lightbulb-o"></span>
 									</div>
@@ -162,7 +195,7 @@
 
 						<div class="item col-12 col-md-6">
 							<div class="row p-2 align-items-center">
-								<div class=" first col col-md">
+								<div class=" first col-3 col-md">
 									<div class="paralelogram mt-2">
 										<span class="fa fa-flag-checkered"></span>
 									</div>
@@ -176,7 +209,7 @@
 
 						<div class="item col-12 col-md-6">
 							<div class="row p-2 align-items-center">
-								<div class="col col-md">
+								<div class="col-3 col-md">
 									<div class="paralelogram mt-2">
 										<span class="fa fa-file-code-o"></span>
 									</div>
@@ -205,22 +238,22 @@
 				</div>
 
 				<div class="row">
-				<div class="skill col-12 col-md-3  text-center  px-3">
+				<div class="skill col-6 col-md-3  text-center  px-3">
 					<img src="images/OurSkiils/wordpress.png" alt="">
 					<h4>WORDPRESS</h4>
 					<p>aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis.</p>
 				</div>
-				<div class="skill col-12 col-md-3 text-center  px-3">
+				<div class="skill col-6 col-md-3 text-center  px-3">
 					<img src="images/OurSkiils/html5.png" alt="">
 					<h4>HTML 5</h4>
 					<p class="">aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis.</p>
 				</div>
-				<div class="skill col-12 col-md-3  text-center  px-3">
+				<div class="skill col-6 col-md-3  text-center  px-3">
 					<img src="images/OurSkiils/css3.png" alt="">
 					<h4>CSS 3</h4>
 					<p>aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis.</p>
 				</div>
-				<div class="skill col-12 col-md-3  text-center  px-3">
+				<div class="skill col-6 col-md-3  text-center  px-3">
 					<img src="images/OurSkiils/photoshop.png" alt="" class="free">
 					<h4 >PHOTOSHOP</h4>
 					<p>aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis.</p>
@@ -264,15 +297,15 @@
 						<img src="images/OurTeam/mate1.png" alt="" >
 						<div class="overlay" id="demo">
 							<div class="linki row mx-0 px-3 py-0"> 
-								<p class="link1 col "><span class="fa fa-facebook"></span></p>
-								<p class="link1 col"><span class="fa fa-twitter"></span></p>
-								<p class="link1 col"><span class="fa fa-linkedin"></span></p>
-								<p class="link1 col"><span class="fa fa-behance"></span></p>
+								<p class="link1 "><span class="fa fa-facebook"></span></p>
+								<p class="link1 "><span class="fa fa-twitter"></span></p>
+								<p class="link1 "><span class="fa fa-linkedin"></span></p>
+								<p class="link1 "><span class="fa fa-behance"></span></p>
 							</div>
 						</div>
 					</div>
 			
-					<h3 onclick="showLinks()">PATRICIA MEDINA</h3>
+					<h3 onclick="">PATRICIA MEDINA</h3>
 					<h4 >Senior Designer</h4>
 					<p class="description">Imperdiet nulla sem fringilla, purus enim amet, nascetur faucibus, adipiscing neque ut bibendum, at felis nec in.</p>
 				</div>
@@ -291,7 +324,7 @@
 						</div>
 					</div>
 
-					<h3 onclick="showLinks()">PATRICIA MEDINA</h3>
+					<h3 onclick="">PATRICIA MEDINA</h3>
 					<h4>Senior Designer</h4>
 					<p class="description">Imperdiet nulla sem fringilla, purus enim amet, nascetur faucibus, adipiscing neque ut bibendum, at felis nec in.</p>
 				</div>
@@ -309,7 +342,7 @@
 						</div>
 					</div>
 
-					<h3 onclick="showLinks()">PATRICIA MEDINA</h3>
+					<h3 onclick="">PATRICIA MEDINA</h3>
 					<h4>Senior Designer</h4>
 					<p class="description">Imperdiet nulla sem fringilla, purus enim amet, nascetur faucibus, adipiscing neque ut bibendum, at felis nec in.</p>
 				</div>
@@ -327,7 +360,7 @@
 						</div>
 					</div>
 
-					<h3 onclick="showLinks()">PATRICIA MEDINA</h3>
+					<h3 onclick="">PATRICIA MEDINA</h3>
 					<h4>Senior Designer</h4>
 					<p class="description">Imperdiet nulla sem fringilla, purus enim amet, nascetur faucibus, adipiscing neque ut bibendum, at felis nec in.</p>
 				</div>
@@ -365,12 +398,12 @@
 
 				<div class="service my-3 col-12 col-md-6">
 					<div class="row p-3">
-						<div class="p1-1 col-12 col-md">
-							<div class="paralelogram mt-2">
+						<div class="p1-1 col-3 col-md">
+							<div class="paralelogram">
 								<span class="fa fa-registered fa-4x "></span>
 							</div>
 						</div>
-						<div class="p1-2 col-12 col-md-9">
+						<div class="p1-2 col-9 col-md-9">
 							<h4 data-toggle="collapse" data-target="#service1" aria-expanded="false" aria-controls="service1">Brand Identity</h4>
 							<div class="collapse" id="service1">
 							<p>aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis.</p>
@@ -381,12 +414,12 @@
 
 				<div class="service my-3 col-12 col-md-6">
 					<div class="row p-3">
-						<div class="p1-1 col-12 col-md">
-							<div class="paralelogram mt-2">
+						<div class="p1-1 col-3 col-md">
+							<div class="paralelogram">
 								<span class="fa fa-modx fa-4x "></span>
 							</div>
 						</div>
-						<div class="p1-2 col-12 col-md-9">
+						<div class="p1-2 col-9 col-md-9">
 							<h4 data-toggle="collapse" data-target="#service2" aria-expanded="false" aria-controls="service2">UI/UX Design</h4>
 							<div class="collapse" id="service2">
 							<p>aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis.</p>
@@ -397,12 +430,12 @@
 
 				<div class="service my-3 col-12 col-md-6">
 					<div class="row p-3">
-						<div class="p1-1 col-12 col-md">
-							<div class="paralelogram mt-2">
+						<div class="p1-1 col-3 col-md">
+							<div class="paralelogram">
 								<span class="fa fa-paint-brush fa-4x "></span>
 							</div>
 						</div>
-						<div class="p1-2 col-12 col-md-9">
+						<div class="p1-2 col-9 col-md-9">
 							<h4 data-toggle="collapse" data-target="#service3" aria-expanded="false" aria-controls="service3">Graphic Design</h4>
 							<div class="collapse" id="service3">
 							<p>aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis.</p>
@@ -413,12 +446,12 @@
 
 				<div class="service my-3 col-12 col-md-6">
 					<div class="row p-3">
-						<div class="p1-1 col-12 col-md">
-							<div class="paralelogram mt-2">
+						<div class="p1-1 col-3 col-md">
+							<div class="paralelogram">
 								<span class="fa fa-puzzle-piece fa-4x "></span>
 							</div>
 						</div>
-						<div class="p1-2 col-12 col-md-9">
+						<div class="p1-2 col-9 col-md-9">
 							<h4 data-toggle="collapse" data-target="#service4" aria-expanded="false" aria-controls="service4">Mobile Application</h4>
 							<div class="collapse" id="service4">
 							<p>aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis.</p>
@@ -429,12 +462,12 @@
 
 				<div class="service my-3 col-12 col-md-6">
 					<div class="row p-3">
-						<div class="p1-1 col-12 col-md">
-							<div class="paralelogram mt-2">
+						<div class="p1-1 col-3 col-md">
+							<div class="paralelogram">
 								<span class="fa fa-mobile fa-4x "></span>
 							</div>
 						</div>
-						<div class="p1-2 col-12 col-md-9">
+						<div class="p1-2 col-9 col-md-9">
 							<h4 data-toggle="collapse" data-target="#service5" aria-expanded="false" aria-controls="service5">Illustration</h4>
 							<div class="collapse" id="service5">
 							<p>aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis.</p>
@@ -445,12 +478,12 @@
 
 				<div class="service my-3 col-12 col-md-6">
 					<div class="row p-3">
-						<div class="p1-1 col-12 col-md">
-							<div class="paralelogram mt-2">
+						<div class="p1-1 col-3 col-md">
+							<div class="paralelogram">
 								<span class="fa fa-video-camera fa-4x "></span>
 							</div>
 						</div>
-						<div class="p1-2 col-12 col-md-9">
+						<div class="p1-2 col-9 col-md-9">
 							<h4 data-toggle="collapse" data-target="#service6" aria-expanded="false" aria-controls="service6">Videography</h4>
 							<div class="collapse" id="service6">
 							<p>aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis.</p>
@@ -464,40 +497,41 @@
 
 		<div class="container-fluid fun text-center">
 			<div class="container facts">
-			<h3>FUN FACTS</h3>
+			<h3 id="most">FUN FACTS</h3>
 			<p class=" col-12 col-md-7 px-0">Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse</p>
 			
-			<ul class="row">
-				<li class="col-12 col-md-3 fact">
+			<ul class="row" id="">
+				<li class="col-6 col-md-3 fact" >
 					<div class="content-fact">
 						<img class="" src="images/OurServices/like.png" alt="">
 						<h4 class="">In Business</h4>
-						<p class="">2006</p>
+						<p class="" id="factor1"></p>
 					</div>
 				</li>
-				<li class="col-12 col-md-3 fact">
+				<li class="col-6 col-md-3 fact">
 					<div class="content-fact">
 						<img src="images/OurServices/comment.png" alt="">
-						<h4>Clients Served</h4>
-						<p>240</p>
+						<h4 >Clients Served</h4>
+						<p id="factor2"></p>
 					</div>    
 				</li>
-				<li class="col-12 col-md-3 fact">
+				<li class="col-6 col-md-3 fact">
 					<div class="content-fact">
 						<img src="images/OurServices/smile.png" alt="">
 						<h4>Projects Delivered</h4>
-						<p>120</p>
+						<p id="factor3"></p>
 					</div>
 				</li>
-				<li class="col-12 col-md-3 fact">
+				<li class="col-6 col-md-3 fact">
 					<div class="content-fact">
 						<img src="images/OurServices/bookmark.png" alt="">
 						<h4>Awards Won</h4>
-						<p>10</p>
+						<p id="factor4"></p>
 					</div>
 				</li>
 				
 			</ul>
+			<!-- <button onclick="taskMyCountdown(120, 'factor3')">show stadistics</button> -->
 		</div>
 		</div>
 	</main>
@@ -587,30 +621,30 @@
 			
 					<nav class="navbar">
 						<ul class="nav">
-							<li class="nav-item mx-2 li1">
-								<a href="#" class="nav-link" >All</a>
+							<li class="nav-item mx-2 lis">
+								<button class="nav-link filter" >All</button>
 							</li>
-							<li class="nav-item mx-2 li2">
-								<a href="#" class="nav-link">Website</a>
+							<li class="nav-item mx-2 lis">
+								<button href="" class="nav-link filter">Website</button>
 							</li>
-							<li class="nav-item mx-2 li3">
-								<a href="#" class="nav-link">Graphic</a>
+							<li class="nav-item mx-2 lis">
+								<button href="" class="nav-link filter">Graphic</button>
 							</li>
-							<li class="nav-item mx-2 li4">
-								<a href="#" class="nav-link">Identity</a>
+							<li class="nav-item mx-2 lis">
+								<button href="" class="nav-link filter">Identity</button>
 							</li>
-							<li class="nav-item mx-2 li5">
-								<a href="#" class="nav-link">Mobile Apps</a>
+							<li class="nav-item mx-2 lis">
+								<button href="" class="nav-link filter">Mobile Apps</button>
 							</li>
 						</ul>
 					</nav>
 
 					<div class="col-12 recents text-center">
-						<ul class="row">
+						<ul class="row"  id="addHere">
 
 							<li class="recent-wrk col-6 col-lg-4">
 								<div class="image">
-									<img src="images/OurWork/recentWork/recent-1.png" alt="">
+									<img src="images/OurWork/recentWork/recent1.png" alt="" class="recImg">
 									<div class="overlay">
 										<div class="linki"> 
 											<span class="fa fa-search"></span>
@@ -618,21 +652,25 @@
 										</div>
 									</div>
 								</div>
-								<h4>Outfield</h4>
+								<div class="recWorkDesc">
+								<h4>UI / UX</h4>
 								<p class="description">Mobile interaction CRM for field reps</p>
+								</div>
 							</li>
 
 							<li class="recent-wrk col-6 col-lg-4">
 								<div class="image">
-									<img src="images/OurWork/recentWork/recent2.png" alt="">
+									<img src="images/OurWork/recentWork/recent2.png" alt="" class="recImg">
 									<div class="overlay">
 										<div class="linki"> 
 											<span class="fa fa-search"></span><span class="fa fa-link"></span>
 										</div>
 									</div>
 								</div>
-								<h4>Outfield</h4>
+								<div class="recWorkDesc">
+								<h4>Prototypes</h4>
 								<p class="description">Mobile interaction CRM for field reps</p>
+								</div>
 							</li>
 
 							<li class="recent-wrk col-6 col-lg-4">
@@ -644,8 +682,10 @@
 										</div>
 									</div>
 								</div>
-								<h4>Outfield</h4>
+								<div class="recWorkDesc">
+								<h4>Publicity</h4>
 								<p class="description">Mobile interaction CRM for field reps</p>
+								</div>
 							</li>
 
 							<li class="recent-wrk col-6 col-lg-4">
@@ -657,8 +697,10 @@
 										</div>
 									</div>
 								</div>
-								<h4>Outfield</h4>
+								<div class="recWorkDesc">
+								<h4>Adaptive</h4>
 								<p class="description">Mobile interaction CRM for field reps</p>
+								</div>
 							</li>
 
 							<li class="recent-wrk col-6 col-lg-4">
@@ -670,8 +712,10 @@
 										</div>
 									</div>
 								</div>
-								<h4>Outfield</h4>
+								<div class="recWorkDesc">		
+								<h4>Mobile Plataforms</h4>
 								<p class="description">Mobile interaction CRM for field reps</p>
+								</div>
 							</li>
 
 							<li class="recent-wrk col-6 col-lg-4">
@@ -683,12 +727,57 @@
 										</div>
 									</div>
 								</div>
-								<h4>Outfield</h4>
+								<div class="recWorkDesc">
+								<h4>StartUps</h4>
 								<p class="description">Mobile interaction CRM for field reps</p>
+								</div>
+							</li>
+							<!-- nuevos -->
+							<li class="recent-wrk col-6 col-lg-4 back">
+								<div class="image">
+									<img src="images/OurWork/recentWork/recent1.png" alt="">
+									<div class="overlay">
+										<div class="linki"> 
+											<span class="fa fa-search"></span><span class="fa fa-link"></span>
+										</div>
+									</div>
+								</div>
+								<div class="recWorkDesc">
+								<h4>StartUps</h4>
+								<p class="description">Mobile interaction CRM for field reps</p>
+								</div>
+							</li>
+							<li class="recent-wrk col-6 col-lg-4 back">
+								<div class="image">
+									<img src="images/OurWork/recentWork/recent2.png" alt="">
+									<div class="overlay">
+										<div class="linki"> 
+											<span class="fa fa-search"></span><span class="fa fa-link"></span>
+										</div>
+									</div>
+								</div>
+								<div class="recWorkDesc">
+								<h4>StartUps</h4>
+								<p class="description">Mobile interaction CRM for field reps</p>
+								</div>
+							</li>
+							<li class="recent-wrk col-6 col-lg-4 back">
+								<div class="image">
+									<img src="images/OurWork/recentWork/recent3.png" alt="">
+									<div class="overlay">
+										<div class="linki"> 
+											<span class="fa fa-search"></span><span class="fa fa-link"></span>
+										</div>
+									</div>
+								</div>
+								<div class="recWorkDesc">
+								<h4>StartUps</h4>
+								<p class="description">Mobile interaction CRM for field reps</p>
+								</div>
 							</li>
 						</ul>
 
-						<input type="button" value="load more">
+						<input type="button" value="load more" id="addMore">
 					</div>
 				</div>
 			</div>
@@ -700,27 +789,27 @@
 		<div class="twit container ">
 			<div class="row ">
 
-				<div class="contenido-twitter col text-center">   
+				<div class="contenido-twitter  col text-center">   
 					<img src="images/twitter.png" alt="">
 					<p>Premium Template - orci in adipiscing felis velit nibh. Consectetuer porttitor feugiat vestibulum sit feugiat, voluptates dui eros libero...</p>
 					<h3>Follow us on Twitter: <span>@rudhisasmito</span></h3>
 				</div>
-				<div class="contenido-twitter col text-center">   
+				<div class="contenido-twitter  col text-center">   
 					<img src="images/twitter.png" alt="">
 					<p>I was in my 8th grade math class. All year a particular student, known for being a little wacky, had been occasionally pretending to be Pikachu.</p>
 					<h3>Follow us on Twitter: <span>@PACO</span></h3>
 				</div>
-				<div class="contenido-twitter col text-center">   
+				<div class="contenido-twitter  col text-center">   
 					<img src="images/twitter.png" alt="">
 					<p>Some days he would sit there working on stuff and someone would ask him a question or whater and he'd just respond 'Pika? Piiiika CHUU' or any other combination.</p>
 					<h3>Follow us on Twitter: <span>@PEDRO</span></h3>
 				</div>
-				<div class="contenido-twitter col text-center">   
+				<div class="contenido-twitter  col text-center">   
 					<img src="images/twitter.png" alt="">
 					<p>Well, one day late in the year we are working on our assignment after recieving the lecture and said kid starts making some weird noises. Starts to shake a little bit.</p>
 					<h3>Follow us on Twitter: <span>@JOSEee</span></h3>
 				</div>
-				<div class="contenido-twitter col text-center">   
+				<div class="contenido-twitter  col text-center">   
 					<img src="images/twitter.png" alt="">
 					<p>At first I thought maybe he was starting to seize, but just as it starts to get frighteningly violent he stops still as a rock and practically shouts "RAICHU!!!' </p>
 					<h3>Follow us on Twitter: <span>@Mariaaaaa</span></h3>
@@ -859,7 +948,7 @@
 			</div>
 			
 				<ul class="row plan-list text-center">
-					<li class="plan col-12 col-md">
+					<li class="plan col-6 col-md">
 						<h3>Basic Plan</h3>
 						<p class="price"><sup>$</sup> 25<sub>/mo</sub></p>
 						<p>60 Users</p>
@@ -870,9 +959,9 @@
 						<a href=""><input type="button" value="ORDER NOW"></a>
 						<p>30 DIAS FREE TRIAL</p>
 					</li>
-					<li class="plan col-12 col-md">
-						<h3>Basic Plan</h3>
-						<p class="price"><sup>$</sup> 25<sub>/mo</sub></p>
+					<li class="plan col-6 col-md">
+						<h3>Medium Plan</h3>
+						<p class="price"><sup>$</sup> 50<sub>/mo</sub></p>
 						<p>60 Users</p>
 						<p>Unlimited Forums</p>
 						<p>Unlimited Reports</p>
@@ -881,9 +970,9 @@
 						<a href=""><input type="button" value="ORDER NOW"></a>
 						<p>30 DIAS FREE TRIAL</p>
 					</li>
-					<li class="plan col-12 col-md">
-						<h3>Basic Plan</h3>
-						<p class="price"><sup>$</sup> 25<sub>/mo</sub></p>
+					<li class="plan col-6 col-md">
+						<h3>Pro Plan</h3>
+						<p class="price"><sup>$</sup> 79<sub>/mo</sub></p>
 						<p>60 Users</p>
 						<p>Unlimited Forums</p>
 						<p>Unlimited Reports</p>
@@ -892,9 +981,9 @@
 						<a href=""><input type="button" value="ORDER NOW"></a>
 						<p>30 DIAS FREE TRIAL</p>
 					</li>
-					<li class="plan col-12 col-md">
-						<h3>Basic Plan</h3>
-						<p class="price"><sup>$</sup> 25<sub>/mo</sub></p>
+					<li class="plan col-6 col-md">
+						<h3>Premium Plan</h3>
+						<p class="price"><sup>$</sup> 99<sub>/mo</sub></p>
 						<p>60 Users</p>
 						<p>Unlimited Forums</p>
 						<p>Unlimited Reports</p>
@@ -914,12 +1003,12 @@
   <section class="quote">
 	<div class=" container content">
 		<div class="row quotes">
-			<div class=" col contenido-quote">
+			<div class=" col contenido-quote tt">
 				<img src="images/quote.png" alt="">
 				<p><cite>Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendiss  aliquam ipsum ante.</cite></p>
 				<h3>Rudhi Sasmito - CEO Company</h3>
 			</div>
-			<div class=" col contenido-quote">
+			<div class=" col contenido-quote tt">
 				<img src="images/quote.png" alt="">
 				<p><cite>hello hello hola hola hello hello hola hola hello hello hola hola hello hello hola hola hello hello hola hola </cite></p>
 				<h3>Rosa Maria - Secreatary</h3>
@@ -936,80 +1025,102 @@
 	</section>
 
 	<section class="contact">
+		
+		<!-- <input type="button" class="buttonUp fa fa-arrow-up" id="goUp" value="" onclick="myScroll(0)"> -->
+		<button class="buttonUp" id="goUp" onclick="myScroll(0)"><i class="fa fa-arrow-up"></i> </button>
+		
 		<div class="container">
 		
-		<div class=" row top">
-				<hgroup class="col-12 col-md-4 align-self-start one">
-					<h2>get in <span>touch</span></h2>
-					<h3>what we do with love</h3>
-				</hgroup>
+			<div class=" row top">
+					<hgroup class="col-12 col-md-4 align-self-start one">
+						<h2>get in <span>touch</span></h2>
+						<h3>what we do with love</h3>
+					</hgroup>
 
-				<div class="col-1 align-self-center two">
-					<svg id="svgelem" height="129" width="44">
-						<line x1="44" y1="0" x2="0" y2="119" style="stroke:#00ccff;stroke-width:2"></line>
-						<line x1="44" y1="10" x2="0" y2="129" style="stroke:#ffaa00;stroke-width:2"></line>
-						<polygon points="36,40 42,40  18,108 12,108" style="fill:#00ccff/*stroke:purple*/;stroke-width:1"></polygon>
-					</svg>
-				</div>
-
-				<div class="col-12 col-md-7 align-self-end three">
-					<p>Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse</p>
-				</div>
-		</div>
-
-
-		<div class="row">
-
-			
-				<form action="" class="col-12 col-md-6 my-2">
-				<div class="row elements">
-
-					<div class=" element1 mb-2 col-12 col-md-6">
-						<input class="form-control" type="text" placeholder="Name">
-					</div>
-					
-					<div class="element2 mb-2 col-12 col-md-6">
-						<input class="form-control"  type="text" placeholder="Email">
-					</div>  
-
-					<div class="element3 my-2 col-12 col-md-12">
-						<input class="form-control" type="text" placeholder="Subject">
+					<div class="col-1 align-self-center two">
+						<svg id="svgelem" height="129" width="44">
+							<line x1="44" y1="0" x2="0" y2="119" style="stroke:#00ccff;stroke-width:2"></line>
+							<line x1="44" y1="10" x2="0" y2="129" style="stroke:#ffaa00;stroke-width:2"></line>
+							<polygon points="36,40 42,40  18,108 12,108" style="fill:#00ccff/*stroke:purple*/;stroke-width:1"></polygon>
+						</svg>
 					</div>
 
-					<div class="element4 my-2 col-12 col-md-12">
-						<textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+					<div class="col-12 col-md-7 align-self-end three">
+						<p>Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse</p>
 					</div>
-					
-					<button class="btn-primary my-2" type="button">send message</button>
-				
-				</div>
-				</form>
-	   
-
-			<div class="col-12 col-md-6 add-info">
-				<h3>additional info</h3>
-				<p class="mb-4">If you have any questiong about our products or something else, please email us or call us. We'll get in touch with you as soon as possible.</p>
-				<ul>
-					<li >
-						<p><span class="fa fa-map-marker  mr-3"></span> Jl. Pahlawan VII No. 247D Sidoarjo</p>
-					</li>
-					<li>
-						<p><span class="fa fa-phone  mr-3"></span> +62 - 85745965973</p>
-					</li>
-					<li>
-						<p><span class="fa fa-envelope  mr-3"></span> rudhisasmito@gmail.com</p>
-					</li>
-					<li>
-						<p><span class="fa fa-clock-o  mr-3"></span> Mo - Fr: 9am to 6pm / Sa, Su: 9am to 2pm</p>
-					</li>
-				</ul>
 			</div>
-		</div>
 
-		</div>
 
-		<div class="map">
-			<img src="#" alt="map here">
+			<div class="row">
+
+				
+					<form action="" class="col-12 col-md-6 my-2">
+					<div class="row elements">
+
+						<div class=" element1 mb-2 col-12 col-md-6">
+							<input class="form-control" type="text" placeholder="Name">
+						</div>
+						
+						<div class="element2 mb-2 col-12 col-md-6">
+							<input class="form-control"  type="text" placeholder="Email">
+						</div>  
+
+						<div class="element3 my-2 col-12 col-md-12">
+							<input class="form-control" type="text" placeholder="Subject">
+						</div>
+
+						<div class="element4 my-2 col-12 col-md-12">
+							<textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+						</div>
+						
+						<button class="btn-primary my-2" type="button">send message</button>
+					
+					</div>
+					</form>
+		
+
+				<div class="col-12 col-md-6 add-info">
+					<h3>additional info</h3>
+					<p class="mb-4">If you have any questiong about our products or something else, please email us or call us. We'll get in touch with you as soon as possible.</p>
+					<ul>
+						<li >
+							<p><span class="fa fa-map-marker  mr-3"></span> Jl. Pahlawan VII No. 247D Sidoarjo</p>
+						</li>
+						<li>
+							<p><span class="fa fa-phone  mr-3"></span> +62 - 85745965973</p>
+						</li>
+						<li>
+							<p><span class="fa fa-envelope  mr-3"></span> rudhisasmito@gmail.com</p>
+						</li>
+						<li>
+							<p><span class="fa fa-clock-o  mr-3"></span> Mo - Fr: 9am to 6pm / Sa, Su: 9am to 2pm</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div id="map" class="col-12"></div>
+				<script>
+					function initMap(){
+						var location = {
+							lat: 49.839683,
+							lng: 24.029717
+						};
+						var map = new google.maps.Map(document.getElementById('map'),{
+							zoom: 12,
+							center: location
+						});
+						var marker = new google.maps.Marker({
+							position: location,
+							map: map
+						});
+					}
+				</script>
+				<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79l68_IxJ0QRvlPqDTx8TDAdNVTs6NGY&callback=initMap">
+				</script>
+			</div>
 		</div>
 	</section>
 
@@ -1017,28 +1128,31 @@
 		<div class="logos col py-3">
 			<ul class="row">
 				<li class="">
-					<p><span class="fa fa-facebook "></span></p>
+					<a href="http://www.facebook.com" target="_blank"><span class="fa fa-facebook "></span></a>
 				</li>
 				<li class="">
-					<p><span class="fa fa-twitter "></span></p>
+					<a href="http://www.twitter.com" target="_blank"><span class="fa fa-twitter "></span></a>
 				</li>
 				<li class="">
-					<p><span class="fa fa-linkedin "></span></p>
+					<a href="http://www.linkedin.com" target="_blank"><span class="fa fa-linkedin "></span></a>
 				</li>
 				<li class="">
-					<p><span class="fa fa-pinterest "></span></p>
+					<a href="http://www.pinterest.com" target="_blank"><span class="fa fa-pinterest "></span></a>
 				</li>
 				<li class="">
-					<p><span class="fa fa-google-plus "></span></p>
+					<a href="https://plus.google.com" target="_blank"><span class="fa fa-google-plus "></span></a>
 				</li>
 				<li class="">
-					<p><span class="fa fa-skype "></span></p>
+					<a href="http://www.skype.com" target="_blank"><span class="fa fa-skype "></span></a>
 				</li>
 				<li class="">
-					<p><span class="fa fa-github "></span></p>
+					<a href="http://www.github.com" target="_blank"><span class="fa fa-github "></span></a>
 				</li>
 			</ul>
 		</div>
+
+		
+
 		<div class=" row rights">
 			<div class="col text-center">
 				<p class="">© 2017 <span>Fe</span> All rights reserved. Theme by <span>Mauricio Morocho.</span></p>
@@ -1048,75 +1162,15 @@
 </footer>
 
 
-
-<!-- <div class=" example">
-	<div class=" ex">
-		<div class="ex1 ">
-			<img src="images/OurSkiils/css3.png" alt="" class="">
-		</div>
-		<div class="ex2  ">
-			<h3 class="">TITTLE</h3>
-		</div>
-		<div class="ex3 ">
-			<p class="">description - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate unde et sapiente quasi iure similique accusantium error ducimus asperiores quidem odio pariatur architecto, corporis optio suscipit reprehenderit officiis. Dignissimos, doloribus.</p>
-		</div>
-	</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<div class=" examples container">
-	<div class=" row exq">
-		<div class="exq1 son">
-			<img src="images/OurSkiils/css3.png" alt="" class="">
-		</div>
-		<div class="exq2 son">
-			<h3 class="">HOLA</h3>
-		</div>
-		<div class="exq3 son">
-			<p class="">AMIGOS</p>
-		</div>
-	</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="goals">
-	<div class="goal">
-		<p>1.-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas mollitia nulla aperiam magni magnam ratione saepe excepturi, cum corrupti dolores eum molestiae assumenda nemo doloremque vitae sed, aliquam placeat.</p>
-	</div>
-	<div class="goal">
-		<p>2.-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas mollitia nulla aperiam magni magnam </p>
-	</div>
-	<div class="goal">
-		<p>3.-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas mollitia nulla aperiam magni magnam ratione saepe excepturi, cum corrupti dolores eum molestiae assumenda nemo doloremque vitae sed.</p>
-	</div>
-	<div class="goal">
-		<p>4.-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas mollitia nulla aperiam magni magnam ratione saepe excepturi, cum corrupti dolores eum.</p>
-	</div>
-	<div class="goal">
-		<p>5.-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas mollitia nulla aperiam magni magnam ratione saepe excepturi, cum corrupti dolores eum molestiae assumenda nem.</p>
-	</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br> -->
+<!-- <img src="images/scroll.png" style="width:auto;height:auto;position:absolute; left:50%;" id="yesImg2"> -->
 
 
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/myJs.js"></script>
 	
 
 	<script type="text/javascript">
