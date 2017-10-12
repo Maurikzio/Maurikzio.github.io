@@ -944,7 +944,7 @@ footer .rights span {
   padding: 0 7px;
   background-color: transparent;
   color: #ffaa00;
-  z-index: 999999;
+  z-index: 999;
 }
 .buttonUp:hover{
   cursor: pointer;
