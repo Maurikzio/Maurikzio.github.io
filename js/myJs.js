@@ -13,7 +13,7 @@ window.onscroll = function (){
     'use strict';
     if(window.pageYOffset >= 12100){
         myButton.style.display = 'block';
-        console.log(window.pageYOffset);
+        //console.log(window.pageYOffset);
     }else{
         myButton.style.display = 'none';
     }
