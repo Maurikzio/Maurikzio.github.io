@@ -94,6 +94,9 @@
 
 
 /*------------------------SECTION HOME------------*/
+.body{
+  font-family: 'Lato';
+}
 .home {
   background: url('../images/headerBackground.png') center;
   background-repeat: no-repeat;
