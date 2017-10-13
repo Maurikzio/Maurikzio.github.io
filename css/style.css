@@ -949,10 +949,19 @@ footer .rights span {
   background-color: transparent;
   color: #ffaa00;
   z-index: 999;
+  animation: moveIt 1s infinite;
 }
 .buttonUp:hover{
   cursor: pointer;
   border: 2px solid #ffaa00;
+}
+
+@keyframes moveIt{
+	0%, 100%{
+    	bottom: 5px;
+    }25%{
+    	bottom: 15px;
+    }
 }
 /*END FOOTER*/
 
