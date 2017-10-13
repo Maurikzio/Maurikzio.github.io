@@ -145,6 +145,7 @@
 .about {
   font-family: 'Lato';
   /*background: #B5942D;*/
+  padding-top: 100px;
 }
 .about .content-about {
   margin-top: 5rem;
