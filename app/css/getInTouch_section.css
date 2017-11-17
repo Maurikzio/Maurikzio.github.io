@@ -1,0 +1,129 @@
+.contact {
+  /*border: .5px solid black;*/
+  position: relative;
+}
+.contact .buttonUp {
+  position: fixed;
+  bottom: 5px;
+  right: 15px;
+  display: none;
+  font-size: 25px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border-color: transparent;
+  padding: 0 7px;
+  background-color: transparent;
+  color: #ffaa00;
+  z-index: 999999;
+  -webkit-animation: moveIt 1s infinite;
+          animation: moveIt 1s infinite;
+}
+.contact .buttonUp:hover {
+  cursor: pointer;
+  border: 2px solid #ffaa00;
+}
+.contact .container .theForm {
+  margin-top: 100px;
+}
+.contact .container .theForm form {
+  margin-top: 100px;
+}
+.contact .container .theForm form input {
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.contact .container .theForm form textarea {
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font-size: 12px;
+  resize: none;
+}
+.contact .container .theForm form .elements .element1 {
+  padding-right: 8px;
+}
+.contact .container .theForm form .elements .element2 {
+  padding-left: 8px;
+}
+.contact .container .theForm form .elements button {
+  border: none;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background: #00ccff;
+  padding: 13px 19px;
+  cursor: pointer;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-left: 16px;
+}
+.contact .container .theForm form .elements button:hover {
+  border: none;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background: #00ccff;
+}
+.contact .container .add-info h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 21px;
+}
+.contact .container .add-info p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+.contact .container .add-info ul {
+  list-style: none;
+  padding: 0px;
+}
+.contact .container .add-info ul li {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.contact .container .add-info ul li p {
+  font-size: 16px;
+}
+.contact .container .add-info ul li p span {
+  line-height: 28px;
+  font-size: 28px;
+}
+.contact .container #map {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/*END OF CONTACT*/
+@-webkit-keyframes moveIt {
+  0%,
+  100% {
+    bottom: 5px;
+  }
+  25% {
+    bottom: 15px;
+  }
+}
+@keyframes moveIt {
+  0%,
+  100% {
+    bottom: 5px;
+  }
+  25% {
+    bottom: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .contact .container .theForm {
+    margin-top: 10px;
+  }
+  .contact .container .theForm form .elements .element1 {
+    padding-right: 15px;
+  }
+  .contact .container .theForm form .elements .element2 {
+    padding-left: 15px;
+  }
+  .contact .container #map {
+    margin-bottom: 0px;
+  }
+}

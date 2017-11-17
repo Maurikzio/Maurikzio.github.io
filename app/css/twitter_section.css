@@ -1,0 +1,103 @@
+.twitter {
+  background: url('../images/OurTeam/teamBackground.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  font-family: 'Lato';
+  background-attachment: fixed;
+  -webkit-transform: skew(0deg, -7deg) translateY(-90px);
+      -ms-transform: skew(0deg, -7deg) translateY(-90px);
+          transform: skew(0deg, -7deg) translateY(-90px);
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.twitter:after {
+  position: absolute;
+  content: ' ';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background: rgba(0, 0, 0, 0.5);
+            z-index: -1;*/
+  background: #333333;
+  z-index: -1;
+  opacity: 0.8;
+}
+.twitter .other .twit {
+  -webkit-transform: skew(0deg, 7deg);
+      -ms-transform: skew(0deg, 7deg);
+          transform: skew(0deg, 7deg);
+  color: white;
+  margin-bottom: 100px;
+}
+.twitter .other .twit .contenido-twitter img {
+  margin-bottom: 95px;
+  height: 72px;
+  width: 89px;
+}
+.twitter .other .twit .contenido-twitter p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 135px;
+  height: 80px;
+}
+.twitter .other .twit .contenido-twitter h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+}
+.twitter .other .twit .contenido-twitter h3 span {
+  color: #00ccff;
+}
+.twitter .other .botones {
+  margin: auto;
+  color: white;
+  left: 50%;
+  -webkit-transform: skew(0deg, 7deg) translateY(-200px);
+      -ms-transform: skew(0deg, 7deg) translateY(-200px);
+          transform: skew(0deg, 7deg) translateY(-200px);
+  /*  margin-top: 150px;
+                margin-bottom: 100px;*/
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.twitter .other .botones .left {
+  color: #cccccc;
+  display: inline;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.twitter .other .botones .left:hover {
+  color: white;
+}
+.twitter .other .botones .rigth {
+  color: #cccccc;
+  display: inline;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.twitter .other .botones .rigth:hover {
+  color: white;
+}
+/*END TWITTER*/
+@media (max-width: 576px) {
+  .twitter {
+    background-attachment: scroll;
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+  .twitter .other .twit {
+    margin-bottom: 10px;
+  }
+  .twitter .other .botones {
+    -webkit-transform: skew(0deg, 7deg) translateY(-130px);
+        -ms-transform: skew(0deg, 7deg) translateY(-130px);
+            transform: skew(0deg, 7deg) translateY(-130px);
+  }
+}

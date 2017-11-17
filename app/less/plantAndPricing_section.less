@@ -1,0 +1,95 @@
+@import "variables";
+
+.pricing{
+    background: #F7F7F7;
+    padding-top: 100px;
+    padding-bottom: 400px;
+   .plan-list{
+       list-style: none;
+       padding: 0px;
+       margin-top: 100px;
+       
+       .plan{
+           h3{
+               background: @color-blue;
+               padding: 32px 50px;
+               color: #ffffff; 
+               font-size: 22px;
+               font-weight: bold;
+               margin-bottom: 30px;
+           }
+           p{
+             padding: 3px 0;
+                 sup{
+                 font-size: 36px;
+                 vertical-align: super;
+               }
+               sub{
+                 font-size: 24px;
+                 vertical-align: sub;
+               }
+           }
+           input{
+               background:#ffffff;
+               padding: 14px 25px;
+               border: .5px solid #333333;
+               font-size: 11px;
+               font-weight: bold;
+               border-top: white;
+               border-left: white;
+               cursor: pointer;
+               margin-top: 57px;
+               margin-bottom: 25px;
+           }
+       }
+       .price{
+               color: @color-dark;
+               font-size: 60px;
+             }
+   }
+} /*END PRICING*/
+
+@media (max-width: 576px) {
+    .pricing{
+        padding-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 150px;
+        .container{
+            // border: 1px solid black;
+            // padding-right: 0;
+            margin-right: 0;
+            .plan-list{
+                margin-top: 50px;
+                .plan{
+                    
+                    &:nth-child(even){
+                        margin-top: 100px;
+                    }
+                    &:last-child{
+                        border: 1px solid gold;                        
+                        h3{
+                            background: gold;
+                            font-weight: 700;
+                        }
+                    }
+                    padding: 0;
+                    h3{
+                    font-weight: 400;                      
+                    padding: 10px 0;
+                    margin: 0;
+                    }
+                    .price{
+                        margin: 0;
+                    }
+                    p{
+                        margin: 0;
+                    }
+                    input{
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}    

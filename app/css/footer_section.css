@@ -1,0 +1,68 @@
+footer {
+  background: black;
+  padding-top: 16px;
+}
+footer .logos {
+  list-style: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0px;
+}
+footer .logos li {
+  color: #ffffff;
+  margin: 5px 10px;
+  padding-left: 0px;
+}
+footer .logos li a {
+  margin-bottom: 0px;
+  font-size: 30px;
+  color: #ffffff;
+}
+footer .logos li a .fa-facebook:hover {
+  color: #3b5998;
+}
+footer .logos li a .fa-twitter:hover {
+  color: #0084b4;
+}
+footer .logos li a .fa-linkedin:hover {
+  color: #0077B5;
+}
+footer .logos li a .fa-pinterest:hover {
+  color: #C92228;
+}
+footer .logos li a .fa-google-plus:hover {
+  color: #d34836;
+}
+footer .logos li a .fa-skype:hover {
+  color: #00aff0;
+}
+footer .logos li a .fa-github:hover {
+  color: #6cc644;
+}
+footer .rights {
+  font-family: 'Lato';
+  color: white;
+  text-align: center;
+  background: #00ccff;
+  padding-top: 30px;
+}
+footer .rights span {
+  color: #0E97B9;
+}
+/*END FOOTER*/
+@media (max-width: 576px) {
+  footer {
+    padding-left: 0px;
+    padding-top: 16px;
+  }
+  footer .logos {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  footer .logos li a {
+    font-size: 25px;
+  }
+}

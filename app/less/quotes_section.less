@@ -1,0 +1,89 @@
+@import "variables";
+
+.quote{
+    background: url('../images/OurTeam/teamBackground.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: 'Lato';
+      
+    transform: skew(0deg, -7deg) translateY(-90px);
+  
+      /*border: .5px solid red;*/
+      margin-bottom: 100px;
+  
+      &:after{
+          position: absolute;
+          content:' ';
+          top:0;
+          width: 100%;
+          height: 100%;
+          /*background: rgba(0, 0, 0, 0.5);
+          z-index: -1;*/
+          background: @color-dark;
+          z-index: -1;
+          opacity: 0.8;
+      }
+      .content{
+          padding-top: 100px;
+          padding-bottom: 100px;
+          .quotes{
+              transform: skew(0deg, 7deg);
+              .contenido-quote{
+                  margin: auto;
+                  text-align: center;
+                  p{
+                      margin-top: 95px;
+                      color: #ffffff;
+                  }
+                  h3{
+                      margin-top: 40px;
+                      color: white;
+                  }
+              }
+          }
+          .botones{
+              transform: skew(0deg, 7deg);
+              .left{
+                  color: red;
+                  &:hover{
+                      color: yellow;
+                  }
+                  .fa-circle{
+                      color: #cccccc;
+                      cursor: pointer;
+                  }
+              }
+              .rigth{
+                  &:hover{
+                      color: white;
+                  }
+                  .fa-circle{
+                      color: #cccccc;
+                      cursor: pointer;
+                  }
+              }
+          }
+      }
+  
+  } /*END IF QUOTE*/
+
+@media (max-width: 576px) {
+    .quote{
+        background-attachment: scroll;
+        margin-bottom: 0;
+        .content{
+            padding-top: 50px;
+            .quotes{
+                .contenido-quote{
+                    p{
+                        margin-top: 30px;
+                    }
+                    h3{
+
+                    }
+                }
+            }
+        }
+    }
+}    

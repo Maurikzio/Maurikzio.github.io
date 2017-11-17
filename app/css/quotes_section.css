@@ -1,0 +1,81 @@
+.quote {
+  background: url('../images/OurTeam/teamBackground.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Lato';
+  -webkit-transform: skew(0deg, -7deg) translateY(-90px);
+      -ms-transform: skew(0deg, -7deg) translateY(-90px);
+          transform: skew(0deg, -7deg) translateY(-90px);
+  /*border: .5px solid red;*/
+  margin-bottom: 100px;
+}
+.quote:after {
+  position: absolute;
+  content: ' ';
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /*background: rgba(0, 0, 0, 0.5);
+          z-index: -1;*/
+  background: #333333;
+  z-index: -1;
+  opacity: 0.8;
+}
+.quote .content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.quote .content .quotes {
+  -webkit-transform: skew(0deg, 7deg);
+      -ms-transform: skew(0deg, 7deg);
+          transform: skew(0deg, 7deg);
+}
+.quote .content .quotes .contenido-quote {
+  margin: auto;
+  text-align: center;
+}
+.quote .content .quotes .contenido-quote p {
+  margin-top: 95px;
+  color: #ffffff;
+}
+.quote .content .quotes .contenido-quote h3 {
+  margin-top: 40px;
+  color: white;
+}
+.quote .content .botones {
+  -webkit-transform: skew(0deg, 7deg);
+      -ms-transform: skew(0deg, 7deg);
+          transform: skew(0deg, 7deg);
+}
+.quote .content .botones .left {
+  color: red;
+}
+.quote .content .botones .left:hover {
+  color: yellow;
+}
+.quote .content .botones .left .fa-circle {
+  color: #cccccc;
+  cursor: pointer;
+}
+.quote .content .botones .rigth:hover {
+  color: white;
+}
+.quote .content .botones .rigth .fa-circle {
+  color: #cccccc;
+  cursor: pointer;
+}
+/*END IF QUOTE*/
+@media (max-width: 576px) {
+  .quote {
+    background-attachment: scroll;
+    margin-bottom: 0;
+  }
+  .quote .content {
+    padding-top: 50px;
+  }
+  .quote .content .quotes .contenido-quote p {
+    margin-top: 30px;
+  }
+}

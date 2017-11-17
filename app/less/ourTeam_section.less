@@ -1,0 +1,150 @@
+@import "variables";
+
+.team{
+	background: url('../images/OurTeam/teamBackground.png') center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+	font-family: 'Lato';
+	transform: skew(0deg, -7deg) translateY(-100px);
+	padding-top: 200px;
+
+	&:after{
+		background: @color-dark;
+		content:' ';
+		height: 100%;
+		opacity: 0.8;
+		position: absolute;
+		top:0;
+		width: 100%;
+		z-index: -1;
+	}
+	.content-team{
+		padding-bottom: 200px;
+		transform: skew(0deg, 7deg);
+		.members{
+			margin-top: 120px;
+			.member{
+				text-align: center;
+				img{
+					border-radius: 100%;
+					width: 100%;
+				}
+				h3{
+					font-size: 20px;
+					margin-top: 36px;
+				}
+				h4 {
+					color: @color-blue;
+					font-size: 12px;
+					font-weight: 700;
+				}
+				p{
+					font-size: 12px;
+					font-weight: 400;
+					margin-top: 18px;
+				}
+				.image{
+					height: 179px;
+					margin: auto;
+					position: relative;
+					padding: 0px;
+                    width: 179px;
+
+					&:hover {
+						.overlay{
+                            opacity: .8;
+                            transition: .5s linear;
+						}
+					}
+
+					.overlay{
+					  background: black;
+					  border-radius: 50%;
+					  height: 100%;
+					  left: 0;
+					  opacity: 0;
+					  position: absolute;
+					  transition: .5s ease;
+					  top: 0;
+					  width: 100%;
+					  	.linki{
+							color: #ffffff;
+							justify-content: space-around;
+							left: 50%;
+							position: absolute;
+
+							transform: translate(-50%, -50%);
+							-ms-transform: translate(-50%, -50%);
+
+							top: 50%;
+							width: 100%;
+
+							span{
+								font-size: 18px;
+								cursor: pointer;
+							}
+							.link1{
+								&:hover{
+                                    color: @color-blue;
+                                    transition: .5s linear;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+} 
+
+@media (max-width: 576px) {
+	.team{
+		padding-top: 20px;	
+		.content-team{
+			padding-bottom: 50px;
+			.members{
+				margin-top: 30px;
+				.member{
+					&:nth-child(even){
+						text-align: left;
+						.image{
+							margin-left: 0;
+						}
+						h4{
+							padding-left: calc(50% - 39%);
+						}
+					}
+					&:nth-child(odd){
+						text-align: right;
+						.image{
+							margin-right: 0;
+						}
+						h4{
+							padding-right: calc(50% - 42%);
+						}
+					}
+					.image{
+						width: 75%;
+						img{
+							width: 170px;
+							height: 170px;
+						}
+						.overlay{
+							display: none;
+						}
+					}
+					h3{
+						margin-top: 0px;
+					}
+					h4{
+						// background: orange;
+					}
+					p{
+						display: none;
+					}
+				}
+			}			
+		}	
+	}
+}

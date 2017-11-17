@@ -1,0 +1,88 @@
+.testimonials {
+  padding-bottom: 190px;
+}
+.testimonials .brands {
+  margin-top: 30px;
+}
+.testimonials .brands ul {
+  list-style: none;
+  padding: 0px;
+}
+.testimonials .brands ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.testimonials .brands ul li img {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  width: auto;
+}
+.testimonials .owl-carousel {
+  margin-top: 50px;
+}
+.testimonials .owl-carousel .testimon {
+  background: #f7f7f7;
+  padding: 20px 20px;
+  /*border: solid red;*/
+  margin-left: 1px;
+}
+.testimonials .owl-carousel .testimon p {
+  padding-bottom: 30px;
+}
+.testimonials .owl-carousel .testimon q {
+  font-style: italic;
+  font-size: 16px;
+}
+.testimonials .owl-carousel .testimon figure {
+  margin-top: 20px;
+  overflow: auto;
+}
+.testimonials .owl-carousel .testimon figure img {
+  max-width: 44px;
+  height: 44px;
+  margin-right: 13px;
+}
+.testimonials .owl-carousel .testimon figure figcaption span {
+  color: #00ccff;
+}
+.testimonials .owl-carousel .owl-nav {
+  margin-top: 70px;
+  width: 100%;
+  text-align: center;
+}
+.testimonials .owl-carousel .owl-prev {
+  width: 3%;
+  display: inline-block;
+}
+.testimonials .owl-carousel .owl-next {
+  width: 3%;
+  display: inline-block;
+}
+/*END TESTIMONIALS*/
+@media (max-width: 576px) {
+  .testimonials {
+    padding-bottom: 60px;
+  }
+  .testimonials .brands {
+    margin-top: 0;
+  }
+  .testimonials .brands ul {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .testimonials .owl-carousel {
+    margin-top: 10px;
+  }
+  .testimonials .owl-carousel .owl-nav {
+    margin-top: 10px;
+  }
+}

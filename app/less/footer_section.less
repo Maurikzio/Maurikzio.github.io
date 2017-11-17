@@ -1,0 +1,87 @@
+@import "variables";
+
+footer{
+	background: black;
+	padding-top: 16px;
+	
+	.logos{
+			list-style: none;
+			justify-content: center;
+			padding-left: 0px;
+			li{
+				color: #ffffff;
+				margin: 5px 10px;
+				padding-left: 0px;
+				a{
+					margin-bottom: 0px;
+                    font-size: 30px;
+                    color: #ffffff;
+					.fa-facebook{
+						&:hover{
+							color: #3b5998;
+						}
+					}
+					.fa-twitter{
+						&:hover{
+							color: #0084b4;	
+						}
+					}
+					.fa-linkedin{
+						&:hover{
+							color: #0077B5;
+						}
+					}
+					.fa-pinterest{
+						&:hover{
+							color: #C92228;
+						}
+					}
+					.fa-google-plus{
+						&:hover{
+							color: #d34836;
+						}
+					}
+					.fa-skype{
+						&:hover{
+							color: #00aff0;
+						}
+					}
+					.fa-github{
+						&:hover{
+							color: #6cc644;
+						}
+					}
+				}
+			}
+	}
+	.rights{
+		font-family:'Lato';
+		color: white;
+		text-align: center;
+		background: @color-blue;
+		padding-top: 30px;
+		span{
+			color: #0E97B9;
+			
+		}
+	}
+
+
+
+}/*END FOOTER*/
+@media (max-width: 576px) {
+	footer{
+		padding-left: 0px;
+		padding-top: 16px;
+		.logos{
+			// border: 1px solid white;
+			// background: orange;
+			justify-content: space-around;	
+			li{
+				a{
+                    font-size: 25px;					
+				}
+			}		
+		}
+	}
+}	
