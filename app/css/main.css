@@ -863,6 +863,7 @@
 }
 .testimonials {
   padding-bottom: 190px;
+  margin-top: 150px;
 }
 .testimonials .brands {
   margin-top: 30px;
@@ -1120,6 +1121,7 @@
 .contact {
   /*border: .5px solid black;*/
   position: relative;
+  margin-top: 150px;
 }
 .contact .buttonUp {
   position: fixed;
