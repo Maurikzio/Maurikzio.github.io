@@ -68,10 +68,10 @@ $(document).ready(function(){
         var div = $("#scrollImg"); 
         var x = div.position();
         this.style.cursor = 'pointer';
-        this.src = "../images/scroll3.png";
+        this.src = "app/images/scroll3.png";
     });
     $("#scrollImg").mouseleave(function(){
-        this.src = "../images/scroll1.png";
+        this.src = "app/images/scroll1.png";
     });
     
     $(".back").hide();
